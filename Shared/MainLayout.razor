@@ -1,15 +1,29 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="sidebar">
-    <NavMenu />
+	<NavMenu />
 </div>
 
 <div class="main">
-    <div class="top-row px-4">
-        <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
-    </div>
+	@*
+		<div class="top-row px-4">
+			<div style="font-size:small; text-align: right">
+				<span>
+					Hebrew date:
+					<b>
+						<script src="https://www.hebcal.com/etc/hdate-en.js" type="text/javascript"></script>
+					</b>
+					&nbsp;<abbr title="source www.hebcal.com">?</abbr> &nbsp;
+				</span>
+			</div>
 
-    <div class="content px-4">
-        @Body
-    </div>
+		</div>
+
+		See https://docs.microsoft.com/en-us/aspnet/core/blazor/call-javascript-from-dotnet?view=aspnetcore-3.1
+
+	*@
+
+	<div class="content px-4">
+		@Body
+	</div>
 </div>

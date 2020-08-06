@@ -8,6 +8,16 @@ a, .btn-link {
     color: #0366d6;
 }
 
+@font-face {
+  font-family: 'davidlibre-regular';
+  src: url('../fonts/davidlibre-regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'davidbold';
+  src: url('../fonts/DavidLibre-Bold.ttf') format('truetype');
+}
+
 .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
@@ -180,4 +190,22 @@ app {
         /* Never collapse the sidebar for wide screens */
         display: block;
     }
+}
+
+.hebrew22 {
+  font-size: 22.0pt;
+  font-family: 'davidlibre-regular';
+  direction: rtl;
+}
+
+.hebrew16 {
+  font-size: 16.0pt;
+  font-family: 'David Libre';
+  direction: rtl;
+}
+
+.hebrew22b {
+  font-size: 22.0pt;
+  font-family: 'davidbold';
+  direction: rtl;
 }
