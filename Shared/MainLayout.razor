@@ -5,6 +5,18 @@
 </div>
 
 <div class="main">
+	<div class="top-row px-4">
+		<AuthorizeView>
+			<Authorized>
+				Hello, @context.User.Identity.Name!
+				<span class="oi oi-account-logout"></span><a href="/.auth/logout?post_logout_redirect_uri=/">Log out</a>
+			</Authorized>
+			<NotAuthorized>
+				<span class="oi oi-account-login"></span><a href="/login-providers">Log in</a>
+			</NotAuthorized>
+		</AuthorizeView>
+	</div>
+
 	@*
 		<div class="top-row px-4">
 			<div style="font-size:small; text-align: right">

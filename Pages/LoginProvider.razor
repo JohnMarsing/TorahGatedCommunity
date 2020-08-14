@@ -1,0 +1,52 @@
+﻿@page "/login-providers"
+
+@{
+// ToDo: Fancy Pants code, but it doesn't work...what's  btn-social ???
+//	var providers = new Dictionary<string, string>
+//{
+//				{ "github", "GitHub" },
+//				{ "twitter", "Twitter" },
+//				{ "facebook", "Facebook" }
+//		};
+}
+
+<h1>Login</h1>
+
+<div class="container">
+
+	@*@foreach (var provider in providers)
+		{
+			<div class="row">
+				<div class="col-sm-12 col-md-9 col-lg-6">
+					<a class="btn btn-block btn-lg btn-social btn-@provider.Key" href="/.auth/login/@provider.Key">
+						<span class="fab fa-@provider.Key"></span> Sign in with @provider.Value
+					</a>
+				</div>
+			</div>
+		}*@
+
+	<div class="row">
+		<div class="col-sm-12 col-md-9 col-lg-6">
+			<a class="btn btn-outline-primary btn-lg" href="/.auth/login/github">
+				<span class="fab fa-Github"></span> Sign in with Github
+			</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12 col-md-9 col-lg-6">
+			<a class="btn btn-outline-primary btn-lg" href="/.auth/login/twitter">
+				<span class="fab fa-Twitter"></span> Sign in with Twitter
+			</a>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-12 col-md-9 col-lg-6">
+			<a class="btn btn-outline-primary btn-lg" href="/.auth/login/facebook">
+				<span class="fab fa-Facebook"></span> Sign in with Facebook
+			</a>
+		</div>
+	</div>
+
+</div>
